@@ -1,6 +1,20 @@
 {
+  "name": "ubiquitous-umbrella-dev",
+  "version": "1.0.0",
+  "description": "First Repo",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
   "dependencies": {
     "express": "^4.19.2",
+    "mongodb": "^6.8.0",
     "nodemon": "^3.1.4"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": []
 }
