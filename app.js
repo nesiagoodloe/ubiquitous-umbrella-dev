@@ -44,13 +44,10 @@ app.get('/mongo', async (req,res)=>{
     console.log('connnected');
     // Send a ping to confirm a successful connection
     let result = await client.db("nesia's-db").collection("whatever-collection")
-    .find({}).toArray();
-    console.log(result);
-
-
-    res.render('mongo', {
-        mongoResult : result
-        });
+    .find({}).toArray(); //function(err, result) {
+        //if (err) throw  err;
+        console.log(result);
+        //db.close();
    
 })
 
